@@ -16,6 +16,9 @@ VLSI System Design Corp. Pvt. Ltd. had proposed this 5 days workshop entitled as
 
 Day 1 (5th July 2023) : Serving as the foundation, introduction to the core concepts and tasks of TCL. 
 
+
+![Day1_vsdiat](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/ba5cdda5-5686-4f7b-a8ec-f322bc7b880d)
+
 Days 2 & 3 (6th & 7th July 2023): Immersing in the art of variable creation and processing constraints. 
 
 Day 4 (8th July 2023) : Introduction to Yosys synthesis tool, understanding memory module RTL descriptions, and mastering gate level netlist descriptions.
