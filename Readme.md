@@ -23,5 +23,13 @@ Days 2 & 3 (6th & 7th July 2023): Immersing in the art of variable creation and 
 
 Day 4 (8th July 2023) : Introduction to Yosys synthesis tool, understanding memory module RTL descriptions, and mastering gate level netlist descriptions.
 
-Day 5 (9th July 2023) : Quality of Results (QOR) generation, optimization to precise WNS and FEP analysis.
+Day 5 (9th July 2023) : Quality of Results (QOR) generation, optimization to precise WNS and FEP ana# Day-wise Workshop Progress
+
+- [Day 1 5th July 2023](#Day-1-5th-July-2023)
+- [Day 2 6th July 2023](#Day-2-6th-July-2023)
+- [Day 3 7th July 2023](#Day-3-7th-July-2023)
+- [Day 4 8th July 2023](#Day-4-8th-July-2023)
+- [Day 5 9th July 2023](#Day-5-9th-July-2023)
+
+
   
