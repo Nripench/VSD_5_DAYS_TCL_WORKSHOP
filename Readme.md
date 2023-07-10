@@ -32,7 +32,7 @@ Day 5 (9th July 2023) : Quality of Results (QOR) generation, optimization to pre
 - [Day 5 9th July 2023](#Day-5-9th-July-2023)
 -
 
-#Day 1 5th July 2023
+Day 1 5th July 2023
 # Tasks of the Day :
 
     • Create & Execute the Bash Script
