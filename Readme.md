@@ -30,6 +30,17 @@ Day 5 (9th July 2023) : Quality of Results (QOR) generation, optimization to pre
 - [Day 3 7th July 2023](#Day-3-7th-July-2023)
 - [Day 4 8th July 2023](#Day-4-8th-July-2023)
 - [Day 5 9th July 2023](#Day-5-9th-July-2023)
+-
+
+#Day 1 5th July 2023
+# Tasks of the Day :
+
+    • Create & Execute the Bash Script
+    • Invoke TCL Command by accepting command line arguments
+    • Deal with issues to pass command line argument to TCL Script (Eg. No Argument, Multiple Arguments, Argument doesn't exist)
+
+
+
 
 
   
