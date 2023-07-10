@@ -30,14 +30,42 @@ Day 5 (9th July 2023) : Quality of Results (QOR) generation, optimization to pre
 - [Day 3 7th July 2023](#Day-3-7th-July-2023)
 - [Day 4 8th July 2023](#Day-4-8th-July-2023)
 - [Day 5 9th July 2023](#Day-5-9th-July-2023)
--
+
+
 
 # Day 1 5th July 2023
 # Tasks of the Day :
 
     • Create & Execute the Bash Script
     • Invoke TCL Command by accepting command line arguments
-    • Deal with issues to pass command line argument to TCL Script (Eg. No Argument, Multiple Arguments, Argument doesn't exist)
+    • Deal with issues to pass command line argument to TCL Script (Eg. No Argument, Multiple Arguments, Argument doesn't exist)# Day 2 6th July 2023
+
+
+# Day 2 6th July 2023
+# Tasks of the Day :
+
+    • Auto Variable Creation
+    • Checking if provided directories exist at respective locations, display an error if not found.....
+    • Convert the inputs into a format that can be passed to Yosys Synthesis Tool
+
+# Results 
+1) Passing Inputs Path from .csv file to the Scripts :
+   
+
+2) Checking the directories for given input path exists at respective locations or not :
+
+![check_the_presenceofpathsandnames](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/8a57efea-997a-466c-9eac-38063c6ded99)
+
+3) Display an Error if the directory is not found at given location :
+![Displaying_the_created_variables](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/32e8c3d2-d829-44e4-ad0a-2e04c29593ef)
+
+   
+
+
+
+
+
+
 
 
 
