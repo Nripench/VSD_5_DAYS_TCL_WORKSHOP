@@ -45,6 +45,11 @@ Case 2) Command Line Argument Doesn't Exist
 
 ![cannot_find_csv](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/96da025d-e112-49e5-a0c7-00eedf07b5e6)
 
+case 3) Argument with -help
+
+![Day1_help](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/3f8ab27e-7aac-4e01-8112-047022b8f27c)
+
+
 
 # Day 2 6th July 2023
 # Tasks of the Day :
