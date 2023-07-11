@@ -39,6 +39,23 @@ Day 5 (9th July 2023) : Quality of Results (QOR) generation, optimization to pre
     • Create & Execute the Bash Script
     • Invoke TCL Command by accepting command line arguments
     • Deal with issues to pass command line argument to TCL Script (Eg. No Argument, Multiple Arguments, Argument doesn't exist)# Day 2 6th July 2023
+# Results : 
+
+Case 1) Normal Command Line Argument Passing
+
+
+
+Case 2) No Command Line Argument
+
+![Day1_vsdiat](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/9eef2f69-3575-4c23-ba71-69da228321b1)
+
+
+
+Case 4) Command Line Argument Doesn't Exist
+
+![cannot_find_csv](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/96da025d-e112-49e5-a0c7-00eedf07b5e6)
+
+
 
 
 # Day 2 6th July 2023
