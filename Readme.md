@@ -132,7 +132,7 @@ Case 2) Command Line Argument Doesn't Exist
 
 1) .conf File Input Script for OpenTimer tool
 
-![5day_conf_file](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/d3005c7b-a593-435b-be93-9a88e8524d0d)
+![Day5_conf_file](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/8a56cc78-0c2c-44c6-bcc8-6334f5fb50e8)
 
 
 2) Snapshot of generated .timing file
