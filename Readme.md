@@ -33,23 +33,15 @@ Day 5 (9th July 2023) : Quality of Results (QOR) generation, optimization to pre
 # Day 1 5th July 2023
 # Tasks of the Day :
 
-    • Create & Execute the Bash Script
-    • Invoke TCL Command by accepting command line arguments
-    • Deal with issues to pass command line argument to TCL Script (Eg. No Argument, Multiple Arguments, Argument doesn't exist)# Day 2 6th July 2023
+     • Invoke TCL Command by accepting command line arguments
+    • Deal with issues to pass command line argument to TCL Script (Eg. No Argument, Multiple Arguments, Argument doesn't exist)
 # Results : 
 
 Case 1) Normal Command Line Argument Passing
 
 ![DAY_image1](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/1719184d-02ab-46e9-bbb7-4c38e9aa19fe)
 
-
-Case 2) No Command Line Argument
-
-![Day1_vsdiat](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/9eef2f69-3575-4c23-ba71-69da228321b1)
-
-
-
-Case 4) Command Line Argument Doesn't Exist
+Case 2) Command Line Argument Doesn't Exist
 
 ![cannot_find_csv](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/96da025d-e112-49e5-a0c7-00eedf07b5e6)
 
@@ -63,9 +55,10 @@ Case 4) Command Line Argument Doesn't Exist
 
 # Results 
 1) Passing Inputs Path from .csv file to the Scripts :
-   
 
-2) Checking the directories for given input path exists at respective locations or not :
+![Screenshot from 2023-07-11 16-40-44](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/09b8aa02-2966-4726-8fd5-a61186e3192d)
+
+3) Checking the directories for given input path exists at respective locations or not :
 
 ![check_the_presenceofpathsandnames](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/8a57efea-997a-466c-9eac-38063c6ded99)
 
