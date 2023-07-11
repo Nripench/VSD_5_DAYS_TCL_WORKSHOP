@@ -40,6 +40,7 @@ Day 5 (9th July 2023) : Quality of Results (QOR) generation, optimization to pre
 
 Case 1) Normal Command Line Argument Passing
 
+![DAY_image1](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/1719184d-02ab-46e9-bbb7-4c38e9aa19fe)
 
 
 Case 2) No Command Line Argument
@@ -135,16 +136,18 @@ Case 4) Command Line Argument Doesn't Exist
 
 1) .conf File Input Script for OpenTimer tool
 
-![image](https://github.com/akash-ambekar/VSD-5-DAYS-TCL-SCRIPTING-WORKSHOP/assets/100372947/22c886cf-c260-42e2-8b3e-291ca569ddf0)
+![5day_conf_file](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/d3005c7b-a593-435b-be93-9a88e8524d0d)
+
 
 2) Snapshot of generated .timing file
    
-![image](https://github.com/akash-ambekar/VSD-5-DAYS-TCL-SCRIPTING-WORKSHOP/assets/100372947/3804307f-cde2-4840-80b9-73589eb047a4)
+![Day5_timing_file](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/5d2f8977-287a-40ce-919b-a0701873fc8d)
 
 
 # Quality of Results (QoR)
 
-![image](https://github.com/akash-ambekar/VSD-5-DAYS-TCL-SCRIPTING-WORKSHOP/assets/100372947/d83df745-d165-4c6a-a0da-348852578f63)
+![Day5_final_images](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/54d36083-8dcd-4a67-a383-fed46955ad2f)
+
 
 # Conclusion 
 
