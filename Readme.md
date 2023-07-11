@@ -147,7 +147,7 @@ Case 2) Command Line Argument Doesn't Exist
 
 # Conclusion 
 
-An Automation called "SYNTHIA" has been successfully created using TCL scripting which will take the input from the user as RTL Verilog Code files and library paths and will synthesize the equivalent hardware for it, will run the static timing analysis (STA) and will display the Quality of Results (QoR).
+An Automation has been successfully created using TCL scripting which will take the input from the user as RTL Verilog Code files and library paths, process the pre-layout synthesis and run the static timing analysis (STA) and displays the Quality of Results (QoR).
 
 # Acknowledgments
 
