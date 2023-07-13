@@ -373,8 +373,9 @@ foreach f $netlist {
         puts -nonewline $fileId "\nread_verilog $f"
 }
 puts -nonewline $fileId "\nhierarchy -top $DesignName"
-puts -nonewline $fileId "\nsynth -top $DesignName"
-puts -nonewline $fileId "\nsplitnets -ports -format __\ndfflibmap -liberty ${LateLibraryPath}\nopt"
+puts -nonewline $fileId "\nsynth -top $DesignName"[join $line " "]
+
+puts -nonewline $fileId "\nsplitnets -ports -format ___\nproc; memory ; opt ; fsm ; opt\ntechmap; opt\ndfflibmap -liberty ${LateLibraryPath}\nopt"
 puts -nonewline $fileId "\nabc -liberty ${LateLibraryPath}"
 puts -nonewline $fileId "\nflatten"
 puts -nonewline $fileId "\nclean -purge\niopadmap -outpad BUFX2 A:Y -bits\nopt\nclean"
@@ -487,7 +488,7 @@ set report_file [open $OutputDirectory/$DesignName.results r]
 set pattern {RAT}
 while {[gets $report_file line] != -1} {
 	if {[regexp $pattern $line]} {
-	set worst_RAT_slack "[expr {[lindex $line 3]/1000}]ns"
+	set worst_RAT_slack "[expr {[lindex [join $line " " ] 3]/1000}]ns"
 	break
         } else {
 	continue
