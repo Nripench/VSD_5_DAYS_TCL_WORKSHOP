@@ -372,7 +372,7 @@ foreach f $netlist {
         puts "data is \"$f\""
         puts -nonewline $fileId "\nread_verilog $f"
 }
-puts -nonewline $fileId "\nhierarchy -check"
+puts -nonewline $fileId "\nhierarchy -top $DesignName"
 puts -nonewline $fileId "\nsynth -top $DesignName"
 puts -nonewline $fileId "\nsplitnets -ports -format __\ndfflibmap -liberty ${LateLibraryPath}\nopt"
 puts -nonewline $fileId "\nabc -liberty ${LateLibraryPath}"
