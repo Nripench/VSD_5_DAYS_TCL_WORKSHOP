@@ -142,7 +142,8 @@ Case 2) Command Line Argument Doesn't Exist
 # Quality of Results (QoR)
 
 
-![QOR_final](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/49a94e88-218d-477f-9d7c-4835a65bf173)
+![QOR_FINAL_IMAGE](https://github.com/Nripench/VSD_5_DAYS_TCL_WORKSHOP/assets/138991348/4065037d-c632-4f5a-984a-922e68c1482c)
+
 
 
 # Conclusion 
