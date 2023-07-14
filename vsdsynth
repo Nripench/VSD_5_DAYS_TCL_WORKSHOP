@@ -1,0 +1,60 @@
+#!/bin/tcsh -f
+echo
+echo "********************       *******************  ******"
+echo "********************       *******************  ******"
+echo "********************       *******************  ******"
+echo "********************       *******************  ******"
+echo "      ******               ******               ******"
+echo "      ******               ******               ******"
+echo "      ******               ******               ******"
+echo "      ******               ******               ******"
+echo "      ******               ******               ******"
+echo "      ******               ******               ******"
+echo "      ******               ******               ******"
+echo "      ******               ******               ******"
+echo "      ******               ******               ******"
+echo "      ******               ******               ******"
+echo "      ******               *******************  ********************"
+echo "      ******               *******************  ********************"
+echo "      ******               *******************  ********************"
+echo "        An unique User Interface (UI) will take RTL netlist & SDC constriants as an input, and will generate"
+echo "        Synthesized netlist & pre-layout timing report as an output. It uses Yosys ope-source tool for synthesis"
+echo "                             and opentimer to generate pre-layout timing reports"
+echo " "
+echo "                             Developed and Maintained by VSD COrporation Pvt. Ltd."
+echo "                      For any queries and bugs, Please drop a mail to kunalpghosh@gmail.com"
+echo " "
+echo "                          *****************A vlsisysterdesign.com intitative***************"
+echo  ""
+
+
+
+########################Tool intialization ##################
+if ($#argv != 1) then
+
+	echo "Info: Please Provide the csv file"
+	exit 1
+endif
+
+if (! -f $argv[1] || $argv[1] == "-help") then
+	if ($argv[1] != "-help") then
+	echo "Error: Cannot find csv file $argv[1].Exiting..."
+	exit 1
+
+        else 
+		echo USAGE ./vsdsynth \<csv file\>
+		echo 
+		echo where \<csv file\> consists of 2 columns, below keyword being in 1st column and is case senssitive. Please provide VSD team for sample csv file
+		echo \<Design Name\> is the name of Top Module
+		echo \<Output Directory\> is the name of output directory where you want to dump synthesis script,synthesized netlist and timign reports
+		echo \<Netlist Directory\> is the name of directory where all RTL netlist are present
+		echo \<Early Library path\> is the file path of the early cell library to be used for STA
+		echo \<late Library path\> is the file path of the late cell library to be used for STA
+		echo \<Constraints file\> is the file path of constraints to be used for STA
+		exit 1
+	endif
+else 
+	tclsh vsdsynth.tcl $argv[1]
+endif
+
+
