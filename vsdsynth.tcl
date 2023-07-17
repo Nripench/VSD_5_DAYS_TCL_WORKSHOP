@@ -297,10 +297,10 @@ if {$count > 2} {
 } else {
 	set op_ports [constraints get cell 0 $i]
 }
-	puts -nonewline $sdc_file "\nset_output_delay -clock \[get_clocks [constraints get cell $related_clock $i]\] -min -rise -source_latency_included [constraints get cell $output_early_rise_delay_start $i] \[get_ports $op_ports\]"
-	puts -nonewline $sdc_file "\nset_output_delay -clock \[get_clocks [constraints get cell $related_clock $i]\] -min -fall -source_latency_included [constraints get cell $output_early_fall_delay_start $i] \[get_ports $op_ports\]"
-	puts -nonewline $sdc_file "\nset_output_delay -clock \[get_clocks [constraints get cell $related_clock $i]\] -max -rise -source_latency_included [constraints get cell $output_late_rise_delay_start $i] \[get_ports $op_ports\]"
-	puts -nonewline $sdc_file "\nset_output_delay -clock \[get_clocks [constraints get cell $related_clock $i]\] -max -fall -source_latency_included [constraints get cell $output_late_fall_delay_start $i] \[get_ports $op_ports\]"
+	puts -nonewline $sdc_file "\nset_output_delay -clock \[get_clocks [constraints get cell $related_clock $i]\] -min -rise -source_latency_included  [constraints get cell $output_early_rise_delay_start $i] \[get_ports $op_ports\]"
+	puts -nonewline $sdc_file "\nset_output_delay -clock \[get_clocks [constraints get cell $related_clock $i]\] -min -fall -source_latency_included  [constraints get cell $output_early_fall_delay_start $i] \[get_ports $op_ports\]"
+	puts -nonewline $sdc_file "\nset_output_delay -clock \[get_clocks [constraints get cell $related_clock $i]\] -max -rise -source_latency_included  [constraints get cell $output_late_rise_delay_start $i] \[get_ports $op_ports\]"
+	puts -nonewline $sdc_file "\nset_output_delay -clock \[get_clocks [constraints get cell $related_clock $i]\] -max -fall -source_latency_included  [constraints get cell $output_late_fall_delay_start $i] \[get_ports $op_ports\]"
 	puts -nonewline $sdc_file "\nset_load [constraints get cell $output_load_start $i] \[get_ports $op_ports\]"
 	set i [expr {$i+1}]
 }
@@ -364,7 +364,8 @@ foreach f $netlist {
 }
 puts -nonewline $fileId "\nhierarchy -top $DesignName"
 puts -nonewline $fileId "\nsynth -top $DesignName"
-puts -nonewline $fileId "\nsplitnets -ports -format ___\nproc; memory; opt; fsm; opt\ntechmap; opt\ndfflibmap -liberty ${LateLibraryPath}"
+#puts -nonewline $fileId "\nsplitnets -ports -format ___\nproc; memory; opt; fsm; opt\ntechmap; opt\ndfflibmap -liberty ${LateLibraryPath}"
+puts -nonewline $fileId "\nsplitnets -ports -format ___\ndfflibmap -liberty ${LateLibraryPath}\nopt"
 puts -nonewline $fileId "\nabc -liberty ${LateLibraryPath} "
 puts -nonewline $fileId "\nflatten"
 puts -nonewline $fileId "\nclean -purge\niopadmap -outpad BUFX2 A:Y -bits\nopt\nclean"
@@ -482,7 +483,7 @@ set report_file [open $OutputDirectory/$DesignName.results r]
 set pattern {RAT}
 while {[gets $report_file line] != -1} {
 	if {[regexp $pattern $line]} {
-	set worst_RAT_slack  "[expr {[lindex [join $line " "] 3]/1000}]ns"
+	set worst_RAT_slack  "[expr {[lindex  $line 3]/1000}]ns"
 	break
         } else {
 	continue
@@ -505,7 +506,7 @@ set report_file [open $OutputDirectory/$DesignName.results r]
 set pattern {Setup}
 while {[gets $report_file line] != -1} {
         if {[regexp $pattern $line]} {
-        set worst_negative_setup_slack "[expr {[lindex [join $line " "] 3]/1000}]ns"
+      set worst_negative_setup_slack "[expr {[lindex $line 3]/1000}]ns"
         break
         } else {
         continue
@@ -529,7 +530,7 @@ set report_file [open $OutputDirectory/$DesignName.results r]
 set pattern {Hold}
 while {[gets $report_file line] != -1} {
         if {[regexp $pattern $line]} {
-        set worst_negative_hold_slack "[expr {[lindex [join $line " "] 3]/1000}]ns"
+        set worst_negative_hold_slack "[expr {[lindex $line 3]/1000}]ns"
         break
         } else {
         continue
@@ -584,3 +585,4 @@ foreach design_name $DesignName runtime $time_elapsed_in_sec instance_count $Ins
 
 puts [format $formatStr "----------" "-------" "-------------"  "---------" "---------" "-------" "---------" "--------" "--------"]
 puts "\n"
+
